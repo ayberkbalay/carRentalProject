@@ -9,7 +9,7 @@ export default async function Home() {
 const isDataEmpty = !Array.isArray(allCars) || allCars.length<1 || !allCars;
 
   return (
-    <main className="overflow-hidden">
+    <main className=" overflow-hidden">
       <Hero/>
 
       <div className="mt-12 padding-x padding-y max-width" id="discover">

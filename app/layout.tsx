@@ -4,7 +4,7 @@ import {Navbar, Footer} from '@/component'
 export const metadata = {
   title: 'Car Hub',
   description: 'Discover the best prices',
-}
+};
 
 export default function RootLayout({
   children,
@@ -19,5 +19,5 @@ export default function RootLayout({
         <Footer />
       </body>
     </html>
-  )
+  );
 }

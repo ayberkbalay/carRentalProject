@@ -25,4 +25,4 @@ const CustomButton = ({ title, containerStyles,
   )
 }
 
-export default CustomButton
+export default CustomButton;

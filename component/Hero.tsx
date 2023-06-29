@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { CustomButton } from '@/component';
-import { CustomButtonProps } from '@/types';
+
 
 const Hero = () => {
     const handleScroll = () => {

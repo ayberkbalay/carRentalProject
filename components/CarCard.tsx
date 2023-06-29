@@ -3,8 +3,8 @@ import React from 'react'
 import { useState } from 'react'
 import Image from 'next/image'
 import { CarProps } from '@/types'
-import { CustomButton } from '@/component'
-import { CarDetails } from '@/component'
+import { CustomButton } from '@components'
+import { CarDetails } from '@components'
 import { calculateCarRent } from '@/utils'
 
 interface CarCardProps {

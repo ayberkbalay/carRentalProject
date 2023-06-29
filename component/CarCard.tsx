@@ -5,13 +5,16 @@ import Image from 'next/image'
 import { CarProps } from '@/types'
 import { CustomButton } from '@/component'
 import { CarDetails } from '@/component'
+import { calculateCarRent } from '@/utils'
 
 interface CarCardProps {
     car: CarProps;
 }
 const CarCard = ({ car }: CarCardProps) => {
+
     const { city_mpg, year, make, model, transmission, drive } = car;
     const [isOpen, setIsOpen] = useState(false);
+    const carRent = calculateCarRent(city_mpg, year);
     return (
         <div className="car-card group">
             <div className="car-card__content">
@@ -21,7 +24,7 @@ const CarCard = ({ car }: CarCardProps) => {
             </div>
             <p className="flex mt-6 text-[32px] font-bold">
                 <span className="self-start text-[14px] font-semibold">
-                    $
+                    {carRent}
                 </span>
 
                 <span className="self-start text-[14px] font-medium">

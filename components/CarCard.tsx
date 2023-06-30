@@ -22,11 +22,11 @@ const CarCard = ({ car }: CarCardProps) => {
                     {make} {model}
                 </h2>
             </div>
-            <p className="flex mt-6 text-[32px] font-bold">
-                <span className="self-start text-[14px] font-semibold">
-                    {carRent}
+            <p className="flex mt-6 text-[32px] leading-[38px] font-extrabold">
+                <span className="self-start text-[14px] leading-[17px] font-semibold">
+                $
                 </span>
-
+                {carRent}
                 <span className="self-start text-[14px] font-medium">
                     /day
                 </span>

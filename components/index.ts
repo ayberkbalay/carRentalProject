@@ -8,6 +8,8 @@ import SearchBar from "./SearchBar";
 import Hero from "./Hero";
 import CarDetails from "./CarDetails";
 import Login from "./Login";
+import ProfileBody from "./ProfileBody";
+import ProfileHeader from "./ProfileHeader";
 
 export {
   Hero,
@@ -19,5 +21,7 @@ export {
   ShowMore,
   SearchBar,
   CarDetails,
-  Login
+  Login,
+  ProfileBody,
+  ProfileHeader
 };

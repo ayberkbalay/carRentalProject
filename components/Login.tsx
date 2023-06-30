@@ -3,6 +3,7 @@ import React from 'react';
 import { CarCardProps } from '@types';
 import { generateCarImageUrl } from '@utils';
 import Image from 'next/image';
+import Link from 'next/link';
   
   const Login = () => {
     return (
@@ -39,12 +40,17 @@ import Image from 'next/image';
                   className="w-full border-gray-300 border rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
                 />
               </div>
+              <Link
+                href="/profile"
+                
+              >
               <button
                 type="submit"
                 className="w-full bg-blue-500 text-white rounded-md py-2 px-4 hover:bg-blue-600 transition-colors"
               >
                 Sign In
               </button>
+              </Link>
             </form>
           </div>
           <div className=" relative max-w-[1440px] mx-auto flex-col justify-center; ">

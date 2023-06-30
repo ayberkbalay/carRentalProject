@@ -7,6 +7,7 @@ import ShowMore from "./ShowMore";
 import SearchBar from "./SearchBar";
 import Hero from "./Hero";
 import CarDetails from "./CarDetails";
+import Login from "./Login";
 
 export {
   Hero,
@@ -18,4 +19,5 @@ export {
   ShowMore,
   SearchBar,
   CarDetails,
+  Login
 };

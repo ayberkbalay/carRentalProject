@@ -74,3 +74,4 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
   
     return `${url}`;
   } 
+

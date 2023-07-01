@@ -13,6 +13,7 @@ export interface CarProps {
   model: string;
   transmission: string;
   year: number;
+
 }
 
 export interface FilterProps {
@@ -21,6 +22,29 @@ export interface FilterProps {
   model?: string;
   limit?: number;
   fuel?: string;
+}
+
+export interface ProfileProps {
+  id?: number;
+  username?: string;
+  email?: string;
+  firstName?: string;
+  lastName?: string;
+  phoneNumber?: string;
+  address?: string;
+  city?: string;
+  state?: string;
+  zipCode?: string;
+  country?: string;
+  profilePicture?: string;
+  cars?: CarProps[];
+  licenseEndDate?: string;
+  licenseType?: string;
+  licenseNumber?: string;
+  lastCarRented?: string;
+  totalKMRented?: number;
+  totalCarsRented?: number;
+  totalMoneySpent?: number;
 }
 
 export interface HomeProps {

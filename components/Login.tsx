@@ -4,64 +4,81 @@ import { CarCardProps } from '@types';
 import { generateCarImageUrl } from '@utils';
 import Image from 'next/image';
 import Link from 'next/link';
-  
-  const Login = () => {
-    return (
-      <div className="flex min-h-screen bg-gray-100">
-        <div className=" flex w-full">
-          <div
-            className="w-1/2 bg-white shadow-md rounded-md flex flex-col justify-center items-center"
-            style={{
-              backgroundImage: `url('')`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
+
+const Login = () => {
+  return (
+    <div className='relative flex flex-col items-center justify-center min-h-screen overflow-hidden"'>
+            <Image
+            src="/logo.svg"
+            alt="logo"
+            width={200}
+            height={200}
+            className='object-contain items-center justify-center'
+          />
+      <div className='w-full p-6 bg-white rounded-md shadow-md lg:max-w-xl'>
+
+
+        <h1 className="text-3xl font-bold text-center text-gray-700">
+
+          Login
+        </h1>
+        <form className='mt-6'>
+          <div className='mb-4'>
+            <label
+              htmlFor="email"
+              className="block text-sm font-semibold text-gray-800"
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md focus:border-gray-400 focus:ring-gray-300 focus:outline-none focus:ring focus:ring-opacity-40"
+            />
+          </div>
+          <div className='mb-4'>
+            <label
+              htmlFor="email"
+              className="block text-sm font-semibold text-gray-800"
+            >
+              Password
+            </label>
+            <input
+              type="password"
+              className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md focus:border-gray-400 focus:ring-gray-300 focus:outline-none focus:ring focus:ring-opacity-40"
+            />
+          </div>
+          <Link
+            href="/forget"
+            className="text-xs text-blue-600 hover:underline"
           >
-            <form className="px-6 py-8">
-              <h2 className="text-2xl font-bold mb-4">Login</h2>
-              <h5>Enter your account for a great experience!</h5>
-              <div className="mb-4">
-                <label htmlFor="email" className="block text-gray-700 font-medium mb-1">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full border-gray-300 border rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                />
-              </div>
-              <div className="mb-6">
-                <label htmlFor="password" className="block text-gray-700 font-medium mb-1">
-                  Password
-                </label>
-                <input
-                  type="password"
-                  id="password"
-                  className="w-full border-gray-300 border rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                />
-              </div>
-              <Link
-                href="/profile"
-                
-              >
-              <button
-                type="submit"
-                className="w-full bg-blue-500 text-white rounded-md py-2 px-4 hover:bg-blue-600 transition-colors"
-              >
-                Sign In
-              </button>
-              </Link>
-            </form>
+            Forget Password?
+          </Link>
+          <div className="mt-2">
+          <Link
+               href="/profile"
+               className="text-xs text-white-600 hover:underline mb-2"
+           >
+            <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600">
+              
+
+              Login
+
+            </button>
+            </Link>
           </div>
-          <div className=" relative max-w-[1440px] mx-auto flex-col justify-center; ">
-            <Image src="/hero-bg.png" alt="Hero" width={500} height={400} />
-            <Image src="/hero.png" alt="Hero" width={500} height={400}/>
-            <Image src="/hero-bg.png" alt="Hero" width={300} height={200} />
-          </div>
-        </div>
+        </form>
+        <p className="mt-4 text-sm text-center text-gray-700">
+          Don't have an account?{" "}
+          <Link
+            href="/signup"
+          >
+            Sign up
+          </Link>
+        </p>
+
       </div>
-    );
-  };
-  
-  export default Login;
-  
+    </div>
+  )
+}
+
+export default Login

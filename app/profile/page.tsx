@@ -3,11 +3,12 @@ import { ProfileHeader, ProfileBody} from '@components';
 
 export default function profile() {
   return (
-      <section>
+      <section className="flex flex-col">
 
       <ProfileHeader />
       <ProfileBody />
-        </section>
+
+      </section>
 
   );
   }

@@ -10,6 +10,7 @@ import CarDetails from "./CarDetails";
 import Login from "./Login";
 import ProfileBody from "./ProfileBody";
 import ProfileHeader from "./ProfileHeader";
+import SignUp from "./SignUp";
 
 export {
   Hero,
@@ -23,5 +24,6 @@ export {
   CarDetails,
   Login,
   ProfileBody,
-  ProfileHeader
+  ProfileHeader,
+  SignUp
 };

@@ -1,13 +1,12 @@
 import React from 'react';
 import { ProfileHeader, ProfileBody} from '@components';
 
-export default function profile({ children }: { children: React.ReactNode }) {
+export default function profile() {
   return (
       <section>
 
       <ProfileHeader />
       <ProfileBody />
-      {children}
         </section>
 
   );
